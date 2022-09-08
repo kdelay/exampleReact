@@ -1,14 +1,14 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LoginForm from "./loginForm";
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Routes>
+        <Switch>
           <Route exact path="/" component={LoginForm} />
-        </Routes>
+        </Switch>
       </div>
     </Router>
   );
